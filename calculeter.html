@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="calculeter">
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" value="c" onclick="clr()" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="disply('1')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="2" onclick="disply('2')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="3" onclick="disply('3')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="/" onclick="disply('/')" onkeydown="myfunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="disply('4')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="5" onclick="disply('5')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="6" onclick="disply('6')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="*" onclick="disply('*')" onkeydown="myfunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="disply('7')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="8" onclick="disply('8')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="9" onclick="disply('9')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="-" onclick="disply('-')" onkeydown="myfunction(event)"></td> 
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="disply('0')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="." onclick="disply('.')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="=" onclick="disply('=')" onkeydown="myfunction(event)"></td>
+            <td><input type="button" value="+" onclick="disply('+')" onkeydown="myfunction(event)"></td>
+        </tr>
+
+        <script>
+            function clr() {
+                document.getElementById("result").value = ""
+            }
+
+        </script>
+</body>
+
+</html>

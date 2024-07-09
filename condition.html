@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h2 id="risult"></h2>
+    <button onclick="view('add')">add</button>
+    <button onclick="view('substract')">substract</button>
+    <button onclick="view('multiply')">multiply</button>
+    <button onclick="view('divide')">divide</button>
+    <input type="text" name="" id="num1">
+    <input type="text" name="" id="num2">
+
+
+
+
+   <script>
+
+       function view(x){
+         let c= ''
+         console.log(x);
+        let a=parseFloat(document.getElementById('num1').value)
+        let b=parseFloat(document.getElementById('num2').value)
+       
+       
+        // if(!a || !b){
+        //     alert('please enter value')
+        // }
+        // else{
+        //     switch(x){
+        //         case 'add':
+        //             console.log('adding');
+        //             c=a+b
+        //             break;
+                    
+        //         case 'substract':
+        //             console.log('subtract');
+        //             c=a-b
+        //             break;
+
+        //         case 'multiply':
+        //             console.log('multipy');
+        //             c=a*b
+        //             break;
+                    
+        //         case 'divide':
+        //             console.log('divide');
+        //             c=a/b    
+        //     }
+           
+        // }
+        // document.getElementById('risult').innerHTML=c
+    
+
+        if(!a || !b){
+            alert('please enter value')
+        }
+
+        else{
+            if(x=='add'){
+                c=a+b
+            }
+            else if(x=='substract'){
+                c=a-b
+            }
+            else if (x=='multiply'){
+                c=a*b
+            }
+            else if(x=='divide'){
+                c=a/b
+            }
+            document.getElementById('risult').innerHTML=c   
+        }
+
+
+
+    }
+
+   </script> 
+</body>
+</html>
